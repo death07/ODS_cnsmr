@@ -1,0 +1,244 @@
+<div class="flex flex-col">
+  <div class="flex flex-col md:flex-row">
+    <div class="flex-1 flex-row">
+      <div class="font-semibold capitalize">tax number</div>
+      <div class="flex-col px-6 my-2">
+        <label for="tinNumber" class="block text-sm font-medium text-gray-700"
+          >Tin Number</label
+        >
+        <div class="mt-4 relative rounded-md shadow-sm">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none w-1/2"
+          >
+            <span class="text-gray-500 sm:text-sm">
+              <mat-icon
+                class="fuse-horizontal-navigation-item-icon"
+                [svgIcon]="'ods:address-info'"
+              >
+              </mat-icon>
+            </span>
+          </div>
+          <input
+            [disabled]="!isEdit"
+            type="text"
+            name="tinNumber"
+            id="tinNumber"
+            class="focus:ring-green-primary focus:border-green-primary p-2 block w-full pl-14 pr-12 sm:text-sm border-gray-300 rounded-md"
+            placeholder="440 123 456"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <div class="font-semibold capitalize">Senior Citizen</div>
+      <div class="py-2">
+        <span class="px-2">Are you a Senior Citizen?</span>
+        <input
+          [disabled]="!isEdit"
+          id="disabled-checked-checkbox"
+          type="checkbox"
+          value=""
+          class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+        />
+      </div>
+      <div class="flex-col px-6 mt-2">
+        <label for="tinNumber" class="block text-sm font-medium text-gray-700"
+          >Senior Citizen ID Number</label
+        >
+        <div class="mt-1 relative rounded-md shadow-sm">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none w-1/2"
+          >
+            <span class="text-gray-500 sm:text-sm">
+              <mat-icon
+                class="fuse-horizontal-navigation-item-icon"
+                [svgIcon]="'ods:address-info'"
+              >
+              </mat-icon>
+            </span>
+          </div>
+          <input
+            type="text"
+            name="tinNumber"
+            id="tinNumber"
+            [disabled]="!isEdit"
+            class="focus:ring-green-primary focus:border-green-primary p-2 block w-full pl-14 pr-12 sm:text-sm border-gray-300 rounded-md"
+            placeholder="02987456321"
+          />
+        </div>
+      </div>
+      <div class="flex-col px-6 mt-2">
+        <label for="tinNumber" class="block text-sm font-medium text-gray-700"
+          >Senior Citizen ID</label
+        >
+        <div class="mt-1 relative flex flex-col w-full">
+          <div
+            class="text-gray-500 sm:text-sm flex flex-row gap-5 items-center"
+          >
+            <div><mat-icon class="" [svgIcon]="'ods:upload'"> </mat-icon></div>
+
+            <div>testing.jpg</div>
+          </div>
+          <div class="text-sm justify-center flex text-gray-500 mt-3">
+            Maximum file size 2MB
+          </div>
+          <div class="justify-center flex">
+            <button
+              class="py-2 px-8 text-white rounded-lg flex gap-1 items-center justify-center"
+              [ngClass]="{
+                'bg-green-secondary': isEdit,
+                'bg-gray-300': !isEdit
+              }"
+            >
+              Upload File
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex-col px-6 mt-2">
+        <label for="tinNumber" class="block text-sm font-medium text-gray-700"
+          >Senior Citizen ID Expiration Date</label
+        >
+        <div class="mt-1 relative rounded-md shadow-sm">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none w-1/2"
+          >
+            <span class="text-gray-500 sm:text-sm">
+              <mat-icon
+                class="fuse-horizontal-navigation-item-icon"
+                [svgIcon]="'ods:date'"
+              >
+              </mat-icon>
+            </span>
+          </div>
+          <input
+            [disabled]="!isEdit"
+            type="text"
+            name="tinNumber"
+            id="tinNumber"
+            class="focus:ring-green-primary focus:border-green-primary p-2 block w-full pl-14 pr-12 sm:text-sm border-gray-300 rounded-md"
+            placeholder="05/25/2023"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <div class="font-semibold capitalize">Person With Disabilities (PWD)</div>
+      <div class="py-2">
+        <span class="px-2">Are you a PWD?</span>
+        <input
+          [disabled]="!isEdit"
+          id="disabled-checked-checkbox"
+          type="checkbox"
+          value=""
+          class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+        />
+      </div>
+      <div class="flex-col px-6 mt-2">
+        <label for="tinNumber" class="block text-sm font-medium text-gray-700"
+          >PWD ID Number</label
+        >
+        <div class="mt-1 relative rounded-md shadow-sm">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none w-1/2"
+          >
+            <span class="text-gray-500 sm:text-sm">
+              <mat-icon
+                class="fuse-horizontal-navigation-item-icon"
+                [svgIcon]="'ods:address-info'"
+              >
+              </mat-icon>
+            </span>
+          </div>
+          <input
+            [disabled]="!isEdit"
+            type="text"
+            name="tinNumber"
+            id="tinNumber"
+            class="focus:ring-green-primary focus:border-green-primary p-2 block w-full pl-14 pr-12 sm:text-sm border-gray-300 rounded-md"
+            placeholder="321654987"
+          />
+        </div>
+      </div>
+      <div class="flex-col px-6 mt-2">
+        <label for="tinNumber" class="block text-sm font-medium text-gray-700"
+          >PWD ID</label
+        >
+        <div class="mt-1 relative flex flex-col w-full">
+          <div
+            class="text-gray-500 sm:text-sm flex flex-row gap-5 items-center"
+          >
+            <div><mat-icon class="" [svgIcon]="'ods:upload'"> </mat-icon></div>
+
+            <div>PWD_ID.jpeg</div>
+          </div>
+          <div class="text-sm justify-center flex text-gray-500 mt-3">
+            Maximum file size 2MB
+          </div>
+          <div class="justify-center flex">
+            <button
+              class="py-2 px-8 text-white rounded-lg flex gap-1 items-center justify-center"
+              [ngClass]="{
+                'bg-green-secondary': isEdit,
+                'bg-gray-300': !isEdit
+              }"
+            >
+              Upload File
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex-col px-6 mt-2">
+        <label for="tinNumber" class="block text-sm font-medium text-gray-700"
+          >PWD ID Expiration Date</label
+        >
+        <div class="mt-1 relative rounded-md shadow-sm">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none w-1/2"
+          >
+            <span class="text-gray-500 sm:text-sm">
+              <mat-icon
+                class="fuse-horizontal-navigation-item-icon"
+                [svgIcon]="'ods:date'"
+              >
+              </mat-icon>
+            </span>
+          </div>
+          <input
+            [disabled]="!isEdit"
+            type="text"
+            name="tinNumber"
+            id="tinNumber"
+            class="focus:ring-green-primary focus:border-green-primary p-2 block w-full pl-14 pr-12 sm:text-sm border-gray-300 rounded-md"
+            placeholder="05/25/2023"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex-1"></div>
+  </div>
+  <div class="flex flex-row gap-4 py-2 justify-end items-end">
+    <ng-container *ngIf="!isEdit; else activeEdit">
+      <button
+        class="py-2 px-8 bg-green-secondary text-white rounded-lg flex gap-1 items-center justify-center"
+        (click)="edit()"
+      >
+        Edit
+      </button>
+    </ng-container>
+    <ng-template #activeEdit>
+      <button
+        class="py-2 px-8 bg-gray-500 text-white rounded-lg flex gap-1 items-center justify-center"
+        (click)="edit()"
+      >
+        Cancel
+      </button>
+      <button
+        class="py-2 px-8 bg-green-secondary text-white rounded-lg flex gap-1 items-center justify-center"
+        (click)="edit()"
+      >
+        Save
+      </button>
+    </ng-template>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="h-screen overflow-hidden">
+  <header></header>
+  <!-- Sidebar -->
+  <sidebar></sidebar>
+
+  <div
+    class="relative p-6 bg-green-primary h-full"
+    [ngClass]="{
+      'ml-0 md:ml-24': isCollapse,
+      'ml-96 md:ml-72 sm:ml-24': !isCollapse
+    }"
+  >
+    <div class="rounded-xl bg-white h-full">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

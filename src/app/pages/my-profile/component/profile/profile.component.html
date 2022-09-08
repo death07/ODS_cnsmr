@@ -1,0 +1,226 @@
+<div class="flex flex-col md:flex-row">
+  <div class="w-50 items-start justify-center flex">
+    <div class="h-20 w-20 rounded-full bg-green-primary object-contain">
+      <img class="h-20 w-20 rounded-full" src="assets/images/1.png" alt="" />
+    </div>
+  </div>
+  <div class="flex-auto md:flex-col">
+    <div class="flex flex-col md:flex-row w-full">
+      <div class="flex-1 flex-col py-2 pr-5 relative">
+        <label for="Username" class="block text-sm font-medium text-gray-700"
+          >Username</label
+        >
+        <div class="mt-1 relative rounded-md shadow-sm">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+          >
+            <span class="text-gray-500 sm:text-sm">
+              <mat-icon
+                class="fuse-horizontal-navigation-item-icon"
+                [svgIcon]="'ods:profile'"
+              >
+              </mat-icon>
+            </span>
+          </div>
+          <input
+            type="text"
+            name="Username"
+            id="Username"
+            class="focus:ring-green-primary focus:border-green-primary p-2 block w-full pl-14 pr-12 sm:text-sm border-gray-300 rounded-md"
+            placeholder="Johdoe"
+            [disabled]="!isEdit"
+          />
+        </div>
+      </div>
+      <div class="flex-1 flex-col py-2 pr-5 relative">
+        <label for="Mobile" class="block text-sm font-medium text-gray-700"
+          >Mobile Number</label
+        >
+        <div class="mt-1 relative rounded-md shadow-sm">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+          >
+            <span class="text-gray-500 sm:text-sm">
+              <mat-icon
+                class="fuse-horizontal-navigation-item-icon"
+                [svgIcon]="'ods:profile'"
+              >
+              </mat-icon>
+            </span>
+          </div>
+          <input
+            type="text"
+            name="Mobile"
+            id="Mobile"
+            class="focus:ring-green-primary focus:border-green-primary p-2 block w-full pl-14 pr-12 sm:text-sm border-gray-300 rounded-md"
+            placeholder="+63 912 456 7890"
+            [disabled]="!isEdit"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row w-full">
+      <div class="flex-1 flex-col py-2 pr-5 relative">
+        <label for="email" class="block text-sm font-medium text-gray-700"
+          >Email Address</label
+        >
+        <div class="mt-1 relative rounded-md shadow-sm">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+          >
+            <span class="text-gray-500 sm:text-sm">
+              <mat-icon
+                class="fuse-horizontal-navigation-item-icon"
+                [svgIcon]="'ods:email'"
+              >
+              </mat-icon>
+            </span>
+          </div>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="focus:ring-green-primary focus:border-green-primary p-2 block w-full pl-14 pr-12 sm:text-sm border-gray-300 rounded-md"
+            placeholder="Johdoe@gmail.com"
+            [disabled]="!isEdit"
+          />
+        </div>
+      </div>
+
+      <div class="flex-1 flex-col py-2 pr-5 relative">
+        <label for="birthdate" class="block text-sm font-medium text-gray-700"
+          >Birthdate</label
+        >
+        <div class="mt-1 relative rounded-md shadow-sm">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+          >
+            <span class="text-gray-500 sm:text-sm">
+              <mat-icon
+                class="fuse-horizontal-navigation-item-icon"
+                [svgIcon]="'ods:date'"
+              >
+              </mat-icon>
+            </span>
+          </div>
+          <input
+            type="text"
+            name="birthdate"
+            id="birthdate"
+            class="focus:ring-green-primary focus:border-green-primary p-2 block w-full pl-14 pr-12 sm:text-sm border-gray-300 rounded-md"
+            placeholder="05/22/1987"
+            [disabled]="!isEdit"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row w-full">
+      <div class="flex-1 flex-col py-2 pr-5 relative">
+        <label for="fname" class="block text-sm font-medium text-gray-700"
+          >Firstname</label
+        >
+        <div class="mt-1 relative rounded-md shadow-sm">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+          >
+            <span class="text-gray-500 sm:text-sm">
+              <mat-icon
+                class="fuse-horizontal-navigation-item-icon"
+                [svgIcon]="'ods:profile'"
+              >
+              </mat-icon>
+            </span>
+          </div>
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            class="focus:ring-green-primary focus:border-green-primary p-2 block w-full pl-14 pr-12 sm:text-sm border-gray-300 rounded-md"
+            placeholder="John"
+            [disabled]="!isEdit"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row w-full">
+      <div class="flex-1 flex-col py-2 pr-5 relative">
+        <label for="mname" class="block text-sm font-medium text-gray-700"
+          >M.I</label
+        >
+        <div class="mt-1 relative rounded-md shadow-sm">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+          >
+            <span class="text-gray-500 sm:text-sm">
+              <mat-icon
+                class="fuse-horizontal-navigation-item-icon"
+                [svgIcon]="'ods:profile'"
+              >
+              </mat-icon>
+            </span>
+          </div>
+          <input
+            type="text"
+            name="mname"
+            id="mname"
+            class="focus:ring-green-primary focus:border-green-primary p-2 block w-full pl-14 pr-12 sm:text-sm border-gray-300 rounded-md"
+            placeholder="L"
+            [disabled]="!isEdit"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row w-full">
+      <div class="flex-1 flex-col py-2 pr-5 relative">
+        <label for="lname" class="block text-sm font-medium text-gray-700"
+          >Lastname</label
+        >
+        <div class="mt-1 relative rounded-md shadow-sm">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none w-1/2"
+          >
+            <span class="text-gray-500 sm:text-sm">
+              <mat-icon
+                class="fuse-horizontal-navigation-item-icon"
+                [svgIcon]="'ods:profile'"
+              >
+              </mat-icon>
+            </span>
+          </div>
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            class="focus:ring-green-primary focus:border-green-primary p-2 block w-full pl-14 pr-12 sm:text-sm border-gray-300 rounded-md"
+            placeholder="Doe"
+            [disabled]="!isEdit"
+          />
+        </div>
+      </div>
+      <div class="flex flex-row gap-4 py-2 justify-end items-end">
+        <ng-container *ngIf="!isEdit; else activeEdit">
+          <button
+            class="py-2 px-8 bg-green-secondary text-white rounded-lg flex gap-1 items-center justify-center"
+            (click)="edit()"
+          >
+            Edit
+          </button>
+        </ng-container>
+        <ng-template #activeEdit>
+          <button
+            class="py-2 px-8 bg-gray-500 text-white rounded-lg flex gap-1 items-center justify-center"
+            (click)="edit()"
+          >
+            Cancel
+          </button>
+          <button
+            class="py-2 px-8 bg-green-secondary text-white rounded-lg flex gap-1 items-center justify-center"
+            (click)="edit()"
+          >
+            Save
+          </button>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
