@@ -1,0 +1,56 @@
+<div
+  class="bg-green-primary flex flex-col absolute"
+  [ngClass]="{ 'w-screen md:w-72 sm:w-30': !isCollapse, 'w-30': isCollapse }"
+>
+  <!-- Sidebar header -->
+  <div
+    class="h-32 bg-green-secondary text-white flex flex-row items-center p-2"
+    [ngClass]="{ ' h-auto align-middle': isCollapse }"
+  >
+    <div class="flex w-20" [ngClass]="{ 'w-full': isCollapse }">
+      <div class="rounded-full border-white border-2 h-20 w-20"></div>
+    </div>
+    <div
+      class="flex flex-col justify-between align-middle p-2"
+      [ngClass]="{ ' hidden sm:hidden': isCollapse }"
+    >
+      <div class="p-2 flex flex-col">
+        <div class="text-xs font-bold">Jonathan L. Miranda</div>
+        <div class="text-xs">09519994728</div>
+      </div>
+      <div class="p-2 flex flex-col">
+        <div class="text-xs font-bold">PHP 100.00</div>
+        <div class="text-xs">Load Balance</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-row bg-white">
+    <ul class="p-4 w-full">
+      <ng-container *ngFor="let item of menu">
+        <li
+          class="p-2 my-2 flex flex-row space-x-4 cursor-pointer"
+          [ngClass]="{
+            'rounded-lg bg-green-active text-white': item.isActive,
+            ' align-middle justify-center': isCollapse
+          }"
+          [routerLink]="[item.link]"
+          routerLinkActive="router-link-active"
+          (click)="routerNavigation(item.link)"
+        >
+          <div>
+            <mat-icon
+              class="fuse-horizontal-navigation-item-icon"
+              [ngClass]="{ ' text-white': item.isActive }"
+              [svgIcon]="item.icon"
+            >
+            </mat-icon>
+          </div>
+          <div *ngIf="!isCollapse">
+            {{ item.title }}
+          </div>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</div>

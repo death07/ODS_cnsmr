@@ -1,0 +1,51 @@
+<div id="my-profile" class="flex flex-col">
+  <div class="p-4 rounded-t-3xl text-white bg-green-secondary">My Profile</div>
+
+  <div
+    class="p-2 md:p-12 overflow-auto max-h-screen md:max-h-screen pb-3/4 md:pb-0 sm:pb-0"
+  >
+    <ng-container *ngFor="let item of menu">
+      <div (click)="setActiveMenu(item.id)">
+        <div class="p-2 m-auto mx-auto flex items-center">
+          <mat-icon
+            class="fuse-horizontal-navigation-item-icon text-white mx-2"
+            [svgIcon]="item.icon"
+          >
+          </mat-icon
+          >{{ item.title }}
+          <mat-icon
+            class="fuse-horizontal-navigation-item-icon text-black mx-20"
+            [svgIcon]="
+              item.id !== selectedItem
+                ? 'heroicons_outline:chevron-right'
+                : 'heroicons_outline:chevron-down'
+            "
+          >
+          </mat-icon>
+        </div>
+        <ng-container *ngIf="item.id == selectedItem">
+          <div
+            [ngSwitch]="item.id"
+            class="py-4 bg-green-tertiary bg-opacity-10 px-4 rounded-md transition-all delay-500"
+          >
+            <div *ngSwitchCase="1">
+              <address-details></address-details>
+            </div>
+            <div *ngSwitchCase="2">
+              <additional-info></additional-info>
+            </div>
+            <div *ngSwitchCase="3">
+              <change-password></change-password>
+            </div>
+            <div *ngSwitchCase="4">
+              <change-pincode></change-pincode>
+            </div>
+            <div *ngSwitchDefault>
+              <profile></profile>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </ng-container>
+  </div>
+</div>
